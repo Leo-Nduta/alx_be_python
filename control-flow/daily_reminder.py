@@ -11,11 +11,11 @@ match priority:
     case "medium":
         priority_msg = f"{task} is a medium priority task."
     case "high":
-        priority_msg = f"Reminder: {task} is a high priority task."
+        priority_msg = f"{task} is a high priority task."
 
 if time_bound == "yes":
     time_bound_msg = ("Work on it as soon as you can.")
 else:
     time_bound_msg = ("Consider working on it when you have time.")
     
-print(priority_msg + time_bound_msg)
+print(f"Reminder: {priority_msg}{time_bound_msg}")

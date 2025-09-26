@@ -10,7 +10,7 @@ def display_menu():
 def main():
     while True:
         display_menu()
-        choice = input("Enter your choice: ").strip()
+        choice = input(int("Enter your choice: "))
         
         if choice == '1':
             item =  input("Item name:")

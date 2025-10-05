@@ -1,5 +1,5 @@
 import sys
-from bank_account import BankAccount
+from programming_paradigm.banc_account import BankAccount
 
 def main():
     account = BankAccount(100)  # Example starting balance
@@ -8,7 +8,7 @@ def main():
     print("Commands: deposit, withdraw, display")
 
     while True:
-        command = input("Enter a command: ").lower()
+        command = input("Enter command: ").lower()
         if command in ["deposit", "withdraw"]:
             try:
                 amount = float(input("Enter an amount: "))
@@ -29,6 +29,9 @@ def main():
                 print("Insufficient funds.")
         elif command == "display":
             print(account.display_balance())
+        elif command == "exit":
+            print("Goodbye")
+            break
         else:
             print("Invalid command.")
 

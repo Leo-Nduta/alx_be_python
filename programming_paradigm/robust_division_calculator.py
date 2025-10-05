@@ -8,7 +8,7 @@ def safe_divide(numerator, denominator):
 
     try:
         result = num / den
-    except ValueError:
+    except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     
     return("The result of the division is ", result)

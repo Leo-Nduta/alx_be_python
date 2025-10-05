@@ -29,6 +29,9 @@ def main():
                 print("Insufficient funds.")
         elif command == "display":
             print(account.display_balance())
+        elif command == "exit":
+            print("Goodbye")
+            break
         else:
             print("Invalid command.")
 

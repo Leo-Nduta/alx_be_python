@@ -25,12 +25,7 @@ class Library:
         self.books = []
     def add_book(self, book):
         self.books.append(book)
-        print(f"Added: {book}")
     def list_books(self):
-        if not self.books:
-            print(f"No books in {self.name}.")
-        else:
-            print(f"\nBooks in {self.name}:")
             for book in self.books:
                 book_type = type(book).__name__   # ← gets 'Book', 'EBook', or 'PrintBook'
                 print(f"{book_type}: {book}")

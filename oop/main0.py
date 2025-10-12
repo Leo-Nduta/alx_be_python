@@ -2,7 +2,7 @@ from library_system import Book, EBook, PrintBook, Library
 
 def main():
     # Create a Library instance
-    my_library = Library("My Library")
+    my_library = Library()
 
     # Create instances of each type of book
     classic_book = Book("Pride and Prejudice", "Jane Austen")
